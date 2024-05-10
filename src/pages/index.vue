@@ -16,6 +16,8 @@ defineOptions({
   <DefaultLayout>
     <TheWelcome />
 
+    <HomeProducts />
+
     <!-- <div>
       <div i-carbon-campsite inline-block text-4xl />
       <p>

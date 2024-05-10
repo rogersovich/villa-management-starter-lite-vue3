@@ -35,7 +35,7 @@ const navlist = ref([
         </div>
       </div>
       <div class="col-span-2 fce">
-        <button class="bg-blue-500 px-8 py-1.5 btn hover:bg-blue-500">
+        <button class="border-rd-md bg-orange-500 px-8 py-1.5 btn hover:bg-orange-600">
           Login
         </button>
       </div>
