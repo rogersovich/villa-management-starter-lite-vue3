@@ -54,6 +54,13 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       dts: true,
+      // The directory where your components are located
+      dirs: ['src/components', 'src/layouts'],
+      // Auto import for Vue components
+      extensions: ['vue'],
+      // Search for subdirectories
+      deep: true,
+
     }),
 
     // https://github.com/antfu/unocss
