@@ -3,19 +3,20 @@ defineOptions({
   name: 'IndexPage',
 })
 
-const name = ref('')
+// const name = ref('')
 
-const router = useRouter()
-function go() {
-  if (name.value)
-    router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
+// const router = useRouter()
+// function go() {
+//   if (name.value)
+//     router.push(`/hi/${encodeURIComponent(name.value)}`)
+// }
 </script>
 
 <template>
   <DefaultLayout>
     <TheWelcome />
-    <div>
+
+    <!-- <div>
       <div i-carbon-campsite inline-block text-4xl />
       <p>
         <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
@@ -44,6 +45,6 @@ function go() {
           Go
         </button>
       </div>
-    </div>
+    </div> -->
   </DefaultLayout>
 </template>
