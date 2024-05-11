@@ -12,7 +12,7 @@
       title="GitHub"
     />
   </nav> -->
-  <div class="grid grid-12 gap-16 bg-gray-900" p="x-8 y-8">
+  <div class="grid grid-12 mt-8 gap-16 bg-zinc-900" p="x-8 y-8">
     <div class="col-span-5">
       <div class="text-gray-100">
         <div class="fcs gap-3">

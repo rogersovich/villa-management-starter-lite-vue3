@@ -17,6 +17,7 @@ defineOptions({
     <TheWelcome />
 
     <HomeProducts />
+    <HomeServices />
 
     <!-- <div>
       <div i-carbon-campsite inline-block text-4xl />
