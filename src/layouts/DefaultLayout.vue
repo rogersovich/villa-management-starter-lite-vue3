@@ -9,9 +9,7 @@
     <!-- Slot for the page content -->
     <slot />
   </main>
-  <footer>
-    dfdsfds
-  </footer>
+  <TheFooter />
 </template>
 
 <style>

@@ -30,7 +30,7 @@ const facilities = ref([
       <div class="absolute right-2 top-2">
         <div class="chip-rating">
           <span i-tabler-star-filled class="inline-block text-[0.75rem]" />
-          <span class="text-sm">
+          <span class="text-sm text-white">
             {{ product.rating }}
           </span>
         </div>
@@ -50,7 +50,7 @@ const facilities = ref([
       </div>
       <div class="grid grid-cols-3 mt-3 gap-2">
         <div v-for="facility in facilities" :key="facility.name" class="group chip-facility">
-          <span :class="facility.icon" inline-block class="text-[0.8rem] text-gray-500 group-hover:text-orange-400" />
+          <span :class="facility.icon" inline-block class="text-[0.8rem] text-orange-500 group-hover:text-orange-400" />
           <span class="text-[0.8em] text-gray-400 group-hover:text-orange-400">
             {{ facility.name }}
           </span>
