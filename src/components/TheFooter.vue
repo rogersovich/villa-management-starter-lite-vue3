@@ -14,7 +14,7 @@
   </nav> -->
   <div class="grid grid-12 mt-8 gap-16 bg-zinc-900" p="x-8 y-8">
     <div class="col-span-5">
-      <div class="text-gray-100">
+      <div class="text-zinc-200">
         <div class="fcs gap-3">
           <div i-tabler-home inline-block text-lg />
           <div class="mt-0.5 text-lg font-bold">
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col-span-7">
-      <div class="grid grid-12 gap-4 text-gray-100">
+      <div class="grid grid-12 gap-4 text-zinc-200">
         <div class="col-span-4">
           <div>
             <div class="text-lg font-bold">

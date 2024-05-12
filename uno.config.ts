@@ -24,7 +24,7 @@ export default defineConfig({
     ['grid-12', 'grid grid-cols-12'],
     ['grid-2', 'grid grid-cols-2'],
     ['title-text', 'font-black text-3xl'],
-    ['container-products', 'grid grid-cols-3 gap-4'],
+    ['container-products', 'grid grid-cols-12 gap-4'],
     ['chip-facility', 'fcc gap-2 border-1 border-gray-300/50 border-rd-full border-solid py-[8px]'],
     ['chip-rating', 'fcc gap-1.5 border-rd-full px-[0.75rem] py-[5px] text-orange-400 backdrop-blur-sm bg-gray-600/30'],
   ],

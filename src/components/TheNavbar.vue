@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { y } = useWindowScroll()
-const staticHeaderClasses = 'sticky top-0'
+const staticHeaderClasses = 'sticky top-0 z-100'
 const headerClasses = computed(() => ({
   'bg-white bg-op-50 backdrop-blur': y.value > 20,
   // Add more classes and conditions as needed

@@ -26,6 +26,14 @@ const products = ref<TCardProduct[]>([
     rating: 3.5,
     address: 'Alamat isi disini',
   },
+  {
+    id: 4,
+    title: 'Villa Melati',
+    image: getImageAssets('villa-1.jpg'),
+    price: '6jt/hari',
+    rating: 3.9,
+    address: 'Alamat isi disini',
+  },
 ])
 </script>
 

@@ -24,7 +24,7 @@ const facilities = ref([
 </script>
 
 <template>
-  <div class="border-rd-3xl bg-white p-2 shadow-sm">
+  <div class="col-span-6 border-rd-3xl bg-white p-2 xl:col-span-3">
     <div class="relative">
       <img :src="product.image" alt="Descriptive text" class="h-[16em] w-full border-rd-2xl object-fill">
       <div class="absolute right-2 top-2">

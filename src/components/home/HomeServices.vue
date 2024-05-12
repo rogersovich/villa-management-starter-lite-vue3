@@ -51,7 +51,7 @@ const services = ref([
     <div class="grid grid-12 mt-10 gap-8">
       <template v-for="service in services" :key="service.name">
         <div class="col-span-4">
-          <div class="min-h-[18em] fcc-v rounded-xl bg-white px-2 py-6 shadow-sm">
+          <div class="min-h-[18em] fcc-v border-1 border-gray-300/50 rounded-xl border-solid px-2 py-6 hover:border-orange-400">
             <div class="fcc">
               <div :class="service.icon" class="text-[4em] text-orange-400" />
             </div>
@@ -59,7 +59,7 @@ const services = ref([
               <div class="text-xl font-bold">
                 {{ service.name }}
               </div>
-              <div class="mt-4 text-sm text-gray-400">
+              <div class="mt-4 text-sm text-gray-500/70">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
               </div>
             </div>
