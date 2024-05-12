@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.0.2",
+  "packageManager": "npm@9.6.7",
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
@@ -31,7 +31,6 @@
     "eslint": "^9.0.0",
     "eslint-plugin-format": "^0.1.1",
     "jsdom": "^24.0.0",
-    "lint-staged": "^15.2.2",
     "pnpm": "^9.0.2",
     "simple-git-hooks": "^2.11.1",
     "taze": "^0.13.6",
@@ -43,12 +42,6 @@
     "unplugin-vue-router": "^0.8.6",
     "vite": "^5.2.9",
     "vitest": "^1.5.0",
-    "vue-tsc": "^2.0.13"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
+    "vue-tsc": "^1.8.27"
   }
 }
