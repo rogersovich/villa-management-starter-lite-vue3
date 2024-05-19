@@ -50,7 +50,7 @@ export default defineConfig({
         './src/types',
       ],
       vueTemplate: true,
-      deep: true,
+      // deep: true,
     }),
 
     // https://github.com/antfu/vite-plugin-components
