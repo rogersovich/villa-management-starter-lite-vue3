@@ -18,5 +18,6 @@ declare module 'vue' {
     TheInput: typeof import('./src/components/TheInput.vue')['default']
     TheNavbar: typeof import('./src/components/TheNavbar.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    WhatsappFloating: typeof import('./src/components/WhatsappFloating.vue')['default']
   }
 }
