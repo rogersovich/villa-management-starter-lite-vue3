@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import type { TCardProduct } from '../../types/productTypes'
 
-// Define the props using the TCardProduct interface
 const { product } = defineProps<{ product: TCardProduct }>()
+
+const router = useRouter()
 
 const facilities = ref([
   {
@@ -21,10 +22,17 @@ const facilities = ref([
     value: 0,
   },
 ])
+
+function routeToDetail() {
+  const urlString = `${product.title} ${product.code}`
+  const formatUrl = formatStringToSlug(urlString)
+
+  router.push(`/catalogs/${formatUrl}`)
+}
 </script>
 
 <template>
-  <div class="col-span-6 border-rd-3xl bg-white p-2 xl:col-span-3">
+  <div class="col-span-6 cursor-pointer rounded-3xl bg-white p-2 outline-1 outline-zinc-200 outline xl:col-span-3 hover:outline-3 hover:outline-orange-400" @click="routeToDetail">
     <div class="relative">
       <img :src="product.image" alt="Descriptive text" class="h-[16em] w-full border-rd-2xl object-fill">
       <div class="absolute right-2 top-2">

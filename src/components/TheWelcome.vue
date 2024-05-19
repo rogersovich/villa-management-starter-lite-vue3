@@ -3,7 +3,7 @@ const imagePath = getImageUrl('house1', 'png')
 </script>
 
 <template>
-  <div font-sans class="grid-2 min-h-2xl border-rd-2xl">
+  <div font-sans class="grid-2 min-h-2xl border-rd-2xl bg-orange-50">
     <div class="fsc-v px-8 py-8">
       <div class="text-left text-[2.4em] font-black 2xl:text-[2.8em] xl:text-[2.6em]">
         Discover a suitable home, find roommates and move in

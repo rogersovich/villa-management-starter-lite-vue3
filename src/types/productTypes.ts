@@ -5,4 +5,5 @@ export interface TCardProduct {
   price: number | string
   rating: number
   address: string
+  code: string
 }

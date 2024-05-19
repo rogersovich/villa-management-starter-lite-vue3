@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import type { TCardProduct } from '~/types/productTypes'
 
+const { isHome, title } = defineProps({
+  isHome: {
+    type: Boolean,
+    default: true,
+  },
+  title: {
+    type: String,
+    default: 'Rekomendasi Villa',
+  },
+})
+
+const router = useRouter()
 const products = ref<TCardProduct[]>([
   {
     id: 1,
@@ -9,6 +21,7 @@ const products = ref<TCardProduct[]>([
     price: '2jt/hari',
     rating: 4.5,
     address: 'Alamat isi disini',
+    code: 'CT-001'
   },
   {
     id: 2,
@@ -17,6 +30,7 @@ const products = ref<TCardProduct[]>([
     price: '3jt/hari',
     rating: 5,
     address: 'Alamat isi disini',
+    code: 'CT-002'
   },
   {
     id: 3,
@@ -25,6 +39,7 @@ const products = ref<TCardProduct[]>([
     price: '4jt/hari',
     rating: 3.5,
     address: 'Alamat isi disini',
+    code: 'CT-003'
   },
   {
     id: 4,
@@ -33,18 +48,23 @@ const products = ref<TCardProduct[]>([
     price: '6jt/hari',
     rating: 3.9,
     address: 'Alamat isi disini',
+    code: 'CT-004'
   },
 ])
+
+function routeToCatalogs() {
+  router.push(`/catalogs`)
+}
 </script>
 
 <template>
   <div font-sans p="y-8">
     <div class="fcb" m="b-4">
       <div class="title-text">
-        Rekomendasi Villa
+        {{ title }}
       </div>
-      <div>
-        <button class="btn btn-more-rounded">
+      <div v-if="isHome">
+        <button class="btn btn-more-rounded" @click="routeToCatalogs">
           Lebih banyak
           <span i-tabler-arrow-narrow-right inline-block text-xl />
         </button>

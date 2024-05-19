@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { y } = useWindowScroll()
+const router = useRouter()
+
 const staticHeaderClasses = 'sticky top-0 z-100'
 const headerClasses = computed(() => ({
   'bg-white bg-op-50 backdrop-blur': y.value > 20,
@@ -11,25 +13,29 @@ const navlist = ref([
     to: '/',
   },
   {
+    name: 'Catalog',
+    to: '/catalogs',
+  },
+  {
     name: 'About',
     to: '/',
   },
-  {
-    name: 'Contact',
-    to: '/',
-  },
 ])
+
+function routeToFeature(to: string) {
+  router.push(`${to}`)
+}
 </script>
 
 <template>
-  <header p="y-5 x-8" :class="[staticHeaderClasses, headerClasses]">
+  <header p="y-5 lg:x-8 xl:x-18 2xl:x-22" :class="[staticHeaderClasses, headerClasses]">
     <div class="grid-12 gap-4">
       <div class="col-span-2 fcs">
         Your Logo
       </div>
       <div class="col-span-8">
         <div class="fcc gap-6">
-          <div v-for="item in navlist" :key="item.name" p="x-2" class="cursor-pointer hover:underline">
+          <div v-for="item in navlist" :key="item.name" p="x-2" class="cursor-pointer hover:underline" @click="routeToFeature(item.to)">
             {{ item.name }}
           </div>
         </div>

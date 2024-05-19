@@ -15,9 +15,11 @@ defineOptions({
 <template>
   <DefaultLayout>
     <WhatsappFloating />
+
     <TheWelcome />
 
     <HomeProducts />
+    
     <HomeServices />
 
     <!-- <div>
