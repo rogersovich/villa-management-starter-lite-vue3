@@ -5,7 +5,7 @@
 <template>
   <TheNavbar />
 
-  <main p="lg:x-8 xl:x-18 2xl:x-22" class="min-h-[72vh]">
+  <main p="lg:x-8 xl:x-28 2xl:x-72" class="min-h-[72vh]">
     <!-- Slot for the page content -->
     <slot />
   </main>

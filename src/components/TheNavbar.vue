@@ -28,7 +28,7 @@ function routeToFeature(to: string) {
 </script>
 
 <template>
-  <header p="y-5 lg:x-8 xl:x-18 2xl:x-22" :class="[staticHeaderClasses, headerClasses]">
+  <header p="y-5 lg:x-8 xl:x-28 2xl:x-72" :class="[staticHeaderClasses, headerClasses]">
     <div class="grid-12 gap-4">
       <div class="col-span-2 fcs">
         Your Logo

@@ -14,6 +14,7 @@ declare module 'vue' {
     ProductCard: typeof import('./src/components/products/ProductCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TagRatings: typeof import('./src/components/TagRatings.vue')['default']
     TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
     TheInput: typeof import('./src/components/TheInput.vue')['default']

@@ -28,7 +28,7 @@ export default defineConfig({
     ['chip-facility', 'fcc gap-2 border-1 border-gray-300/50 border-rd-full border-solid py-[8px]'],
     ['chip-rating', 'fcc gap-1.5 border-rd-full px-[0.75rem] py-[5px] text-orange-400 backdrop-blur-sm bg-gray-600/30'],
     ['btn-back', 'fcs cursor-pointer gap-3 rounded-sm px-3 py-1 hover:outline-1 hover:outline-gray-300 hover:outline'],
-    ['btn-variant', 'inline-flex justify-center border border-transparent rounded-md bg-orange-100 px-4 py-2 text-sm text-orange-900 font-medium hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
+    ['btn-variant', 'inline-flex justify-center border border-transparent rounded-md bg-orange-100 px-4 py-2 text-sm text-orange-800 font-medium hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
   ],
   presets: [
     presetUno(),
