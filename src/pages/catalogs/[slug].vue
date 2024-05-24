@@ -108,18 +108,7 @@ onMounted(() => {
         <ProductDetailReview />
         <ProductDetailFacility />
         <ProductDetailLocation />
-        <div>
-          <!-- <iframe
-            width="600"
-            height="450"
-            style="border:0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyADnVJK0TfxN8u7ZIwRuTl1mvJLHBCnqG0
-&center=47.6205,-122.3493&zoom=15"
-          /> -->
-        </div>
+        <ProductDetailFaq />
       </div>
     </div>
   </DefaultLayout>

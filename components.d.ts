@@ -16,6 +16,7 @@ declare module 'vue' {
     ProductCard: typeof import('./src/components/products/ProductCard.vue')['default']
     ProductCardJoin: typeof import('./src/components/products/ProductCardJoin.vue')['default']
     ProductDetailFacility: typeof import('./src/components/products/ProductDetailFacility.vue')['default']
+    ProductDetailFaq: typeof import('./src/components/products/ProductDetailFaq.vue')['default']
     ProductDetailGallery: typeof import('./src/components/products/ProductDetailGallery.vue')['default']
     ProductDetailLocation: typeof import('./src/components/products/ProductDetailLocation.vue')['default']
     ProductDetailReview: typeof import('./src/components/products/ProductDetailReview.vue')['default']

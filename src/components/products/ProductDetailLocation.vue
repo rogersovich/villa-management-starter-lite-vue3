@@ -244,7 +244,7 @@ onMounted(() => {
         </div>
         <div>
           <template v-for="location in tagLocations" :key="location.title">
-            <div class="fs mb-3.5 gap-3">
+            <div class="mb-3.5 fs gap-3">
               <div class="rounded-full px-1.5 py-1.5" :class="getLocationTagBg(location.type)">
                 <div class="text-[0.9em] text-white" :class="getLocationTagIcon(location.type)" />
               </div>
