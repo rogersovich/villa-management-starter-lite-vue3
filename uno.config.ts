@@ -21,6 +21,9 @@ export default defineConfig({
     ['fce-v', 'flex items-center justify-end flex-col'],
     ['fce-v', 'flex items-center justify-end flex-col'],
     ['fsc-v', 'flex items-start justify-center flex-col'],
+    ['fs', 'flex items-start'],
+    ['fc', 'flex items-center'],
+    ['fe', 'flex items-end'],
     ['grid-12', 'grid grid-cols-12'],
     ['grid-2', 'grid grid-cols-2'],
     ['title-text', 'font-black text-3xl'],
@@ -29,6 +32,7 @@ export default defineConfig({
     ['chip-rating', 'fcc gap-1.5 border-rd-full px-[0.75rem] py-[5px] text-orange-400 backdrop-blur-sm bg-gray-600/30'],
     ['btn-back', 'fcs cursor-pointer gap-3 rounded-sm px-3 py-1 hover:outline-1 hover:outline-gray-300 hover:outline'],
     ['btn-variant', 'inline-flex justify-center border border-transparent rounded-md bg-orange-100 px-4 py-2 text-sm text-orange-800 font-medium hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
+    ['btn-text', 'inline-flex justify-center border border-transparent rounded-md px-4 py-2 text-sm text-orange-500 font-medium hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
   ],
   presets: [
     presetUno(),
