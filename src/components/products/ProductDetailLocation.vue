@@ -244,17 +244,22 @@ onMounted(() => {
         </div>
         <div>
           <template v-for="location in tagLocations" :key="location.title">
-            <div class="mb-3.5 fs gap-3">
-              <div class="rounded-full px-1.5 py-1.5" :class="getLocationTagBg(location.type)">
-                <div class="text-[0.9em] text-white" :class="getLocationTagIcon(location.type)" />
-              </div>
-              <div>
+            <div class="mb-3.5 fcb gap-3">
+              <div class="fs gap-3">
+                <div class="rounded-full px-1.5 py-1.5" :class="getLocationTagBg(location.type)">
+                  <div class="text-[0.9em] text-white" :class="getLocationTagIcon(location.type)" />
+                </div>
                 <div>
-                  {{ location.title }}
+                  <div>
+                    {{ location.title }}
+                  </div>
+                  <div class="text-sm text-zinc-400 font-100">
+                    {{ location.subtitle }}
+                  </div>
                 </div>
-                <div class="text-sm text-zinc-400 font-100">
-                  {{ location.subtitle }}
-                </div>
+              </div>
+              <div class="text-sm font-bold">
+                302m
               </div>
             </div>
           </template>
