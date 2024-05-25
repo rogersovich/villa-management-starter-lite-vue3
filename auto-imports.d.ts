@@ -6,6 +6,8 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
+  const OPTION_NAV: typeof import('./src/composables/generalHelpers')['OPTION_NAV']
+  const OPTION_NAV_TABS: typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const c: typeof import('./src/composables/scheduleCalendarConfig')['c']
@@ -37,6 +39,7 @@ declare global {
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
   const extendRef: typeof import('@vueuse/core')['extendRef']
+  const extractCatalogId: typeof import('./src/composables/generalHelpers')['extractCatalogId']
   const formatSlugToString: typeof import('./src/composables/generalHelpers')['formatSlugToString']
   const formatStringToSlug: typeof import('./src/composables/generalHelpers')['formatStringToSlug']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
@@ -75,6 +78,7 @@ declare global {
   const onStartTyping: typeof import('@vueuse/core')['onStartTyping']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const optionsNavTabs: typeof import('./src/composables/generalHelpers')['optionsNavTabs']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
   const provide: typeof import('vue')['provide']
   const provideLocal: typeof import('@vueuse/core')['provideLocal']
@@ -94,6 +98,7 @@ declare global {
   const resolveComponent: typeof import('vue')['resolveComponent']
   const resolveRef: typeof import('@vueuse/core')['resolveRef']
   const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
+  const scrollToTargetAdjusted: typeof import('./src/composables/generalHelpers')['scrollToTargetAdjusted']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
@@ -308,6 +313,7 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly calendarColorConfig: UnwrapRef<typeof import('./src/composables/scheduleCalendarConfig')['calendarColorConfig']>
@@ -336,6 +342,7 @@ declare module 'vue' {
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
+    readonly extractCatalogId: UnwrapRef<typeof import('./src/composables/generalHelpers')['extractCatalogId']>
     readonly formatSlugToString: UnwrapRef<typeof import('./src/composables/generalHelpers')['formatSlugToString']>
     readonly formatStringToSlug: UnwrapRef<typeof import('./src/composables/generalHelpers')['formatStringToSlug']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
@@ -393,6 +400,7 @@ declare module 'vue' {
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
+    readonly scrollToTargetAdjusted: UnwrapRef<typeof import('./src/composables/generalHelpers')['scrollToTargetAdjusted']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
@@ -599,6 +607,7 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly calendarColorConfig: UnwrapRef<typeof import('./src/composables/scheduleCalendarConfig')['calendarColorConfig']>
@@ -627,6 +636,7 @@ declare module '@vue/runtime-core' {
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
+    readonly extractCatalogId: UnwrapRef<typeof import('./src/composables/generalHelpers')['extractCatalogId']>
     readonly formatSlugToString: UnwrapRef<typeof import('./src/composables/generalHelpers')['formatSlugToString']>
     readonly formatStringToSlug: UnwrapRef<typeof import('./src/composables/generalHelpers')['formatStringToSlug']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
@@ -684,6 +694,7 @@ declare module '@vue/runtime-core' {
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
+    readonly scrollToTargetAdjusted: UnwrapRef<typeof import('./src/composables/generalHelpers')['scrollToTargetAdjusted']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>

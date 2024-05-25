@@ -10,7 +10,7 @@ import { createEventModalPlugin } from '@schedule-x/event-modal'
 import moment from 'moment'
 import type { TCalendarEvent } from '~/types/calendarTypes'
 
-const props = defineProps<{ events: TCalendarEvent[] }>()
+const props = defineProps<{ events?: TCalendarEvent[] }>()
 
 const today = ref(moment().format('YYYY-MM-DD'))
 const calendarApp = createCalendar({

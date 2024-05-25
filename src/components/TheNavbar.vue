@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { y } = useWindowScroll()
 const router = useRouter()
+const route = useRoute()
 
-const staticHeaderClasses = 'sticky top-0 z-100'
+const staticHeaderClasses = route.name !== '/catalogs/[slug]' ? 'sticky top-0 z-100' : ''
 const headerClasses = computed(() => ({
   'bg-white bg-op-50 backdrop-blur': y.value > 20,
   // Add more classes and conditions as needed

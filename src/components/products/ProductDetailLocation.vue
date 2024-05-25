@@ -223,7 +223,7 @@ onMounted(() => {
           <Carousel ref="carouselRefs" v-model="carrouselCurrentSlide" snap-align="start" :items-to-show="carouselTotalShow" :wrap-around="false" :mouse-drag="false">
             <Slide v-for="(item, index) in nearest_destionation" :key="index">
               <div :class="carouselClasses" class="w-full">
-                <div class="cursor-pointer border border-1 rounded-full px-4 py-1 text-[1em]" :class="tagNearestLocation === item.title ? 'border-orange-400 bg-orange-50 text-orange-400' : 'border-zinc-200 '" @click="onSelectTag(item.title)">
+                <div class="cursor-pointer border border-1 rounded-full px-4 py-1 text-[0.8em]" :class="tagNearestLocation === item.title ? 'border-orange-400 bg-orange-50 text-orange-400' : 'border-zinc-200 '" @click="onSelectTag(item.title)">
                   {{ item.title }}
                 </div>
               </div>
