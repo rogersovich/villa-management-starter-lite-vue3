@@ -15,6 +15,7 @@ declare module 'vue' {
     HomeServices: typeof import('./src/components/home/HomeServices.vue')['default']
     ProductCard: typeof import('./src/components/products/ProductCard.vue')['default']
     ProductCardJoin: typeof import('./src/components/products/ProductCardJoin.vue')['default']
+    ProductDetailCalendar: typeof import('./src/components/products/ProductDetailCalendar.vue')['default']
     ProductDetailFacility: typeof import('./src/components/products/ProductDetailFacility.vue')['default']
     ProductDetailFaq: typeof import('./src/components/products/ProductDetailFaq.vue')['default']
     ProductDetailGallery: typeof import('./src/components/products/ProductDetailGallery.vue')['default']

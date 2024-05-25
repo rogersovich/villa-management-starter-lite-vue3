@@ -109,6 +109,7 @@ onMounted(() => {
         <ProductDetailFacility />
         <ProductDetailLocation />
         <ProductDetailFaq />
+        <ProductDetailCalendar />
       </div>
     </div>
   </DefaultLayout>
