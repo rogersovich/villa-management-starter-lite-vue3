@@ -3,6 +3,16 @@ const logo = getImageAssets('villarian.svg')
 const illustration1 = getImageAssets('house2.png')
 
 const currentYear = new Date().getFullYear()
+
+const router = useRouter()
+
+const handleLogin = () => {
+  const toastStore = useToastStore()
+
+  toastStore.showToastMessage('Anda berhasil Masuk', 'success')
+
+  router.push('/')
+}
 </script>
 
 <template>
@@ -63,7 +73,7 @@ const currentYear = new Date().getFullYear()
                 </button>
               </div>
               <div class="mt-6">
-                <button type="button" class="w-full rounded-md py-2.5 btn">
+                <button type="button" class="w-full rounded-md py-2.5 btn" @click="handleLogin">
                   Masuk
                 </button>
               </div>

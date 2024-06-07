@@ -13,6 +13,7 @@ declare global {
   const c: typeof import('./src/composables/scheduleCalendarConfig')['c']
   const calendar: typeof import('./src/composables/scheduleCalendarConfig')['calendar']
   const calendarColorConfig: typeof import('./src/composables/scheduleCalendarConfig')['calendarColorConfig']
+  const callToast: typeof import('./src/composables/generalHelpers')['callToast']
   const computed: typeof import('vue')['computed']
   const computedAsync: typeof import('@vueuse/core')['computedAsync']
   const computedEager: typeof import('@vueuse/core')['computedEager']
@@ -46,6 +47,7 @@ declare global {
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const getImageAssets: typeof import('./src/composables/imageSource')['getImageAssets']
   const getImageUrl: typeof import('./src/composables/imageSource')['getImageUrl']
+  const getNotif: typeof import('./src/composables/generalHelpers')['getNotif']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
@@ -277,6 +279,7 @@ declare global {
   const useTitle: typeof import('@vueuse/core')['useTitle']
   const useToNumber: typeof import('@vueuse/core')['useToNumber']
   const useToString: typeof import('@vueuse/core')['useToString']
+  const useToastStore: typeof import('./src/store/toastStore')['useToastStore']
   const useToggle: typeof import('@vueuse/core')['useToggle']
   const useTransition: typeof import('@vueuse/core')['useTransition']
   const useUrlSearchParams: typeof import('@vueuse/core')['useUrlSearchParams']
@@ -583,6 +586,7 @@ declare module 'vue' {
     readonly useTitle: UnwrapRef<typeof import('@vueuse/core')['useTitle']>
     readonly useToNumber: UnwrapRef<typeof import('@vueuse/core')['useToNumber']>
     readonly useToString: UnwrapRef<typeof import('@vueuse/core')['useToString']>
+    readonly useToastStore: UnwrapRef<typeof import('./src/store/toastStore')['useToastStore']>
     readonly useToggle: UnwrapRef<typeof import('@vueuse/core')['useToggle']>
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useUrlSearchParams: UnwrapRef<typeof import('@vueuse/core')['useUrlSearchParams']>
@@ -882,6 +886,7 @@ declare module '@vue/runtime-core' {
     readonly useTitle: UnwrapRef<typeof import('@vueuse/core')['useTitle']>
     readonly useToNumber: UnwrapRef<typeof import('@vueuse/core')['useToNumber']>
     readonly useToString: UnwrapRef<typeof import('@vueuse/core')['useToString']>
+    readonly useToastStore: UnwrapRef<typeof import('./src/store/toastStore')['useToastStore']>
     readonly useToggle: UnwrapRef<typeof import('@vueuse/core')['useToggle']>
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useUrlSearchParams: UnwrapRef<typeof import('@vueuse/core')['useUrlSearchParams']>
