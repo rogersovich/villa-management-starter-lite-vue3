@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="border-b-1 border-zinc-200 pb-[2.5em] pt-6">
+  <div class="mx-4 border-b-1 border-zinc-200 pb-[2.5em] pt-6 md:mx-0">
     <div class="fcs gap-2.5 pb-1">
       <div class="rounded bg-[#e7f2ff] px-2 py-0.5 text-sm">
         Villa
@@ -15,8 +15,8 @@
       </div>
     </div>
     <div class="grid grid-2 gap-4">
-      <div class="col-span-1">
-        <div class="mb-2 text-[2em] font-bold tracking-wide">
+      <div class="col-span-2 md:col-span-1">
+        <div class="mb-2 mt-2 text-[1.5em] font-bold tracking-wide md:mt-0 md:text-[2em]">
           Villa Mawar Selatan
         </div>
         <div class="fcs gap-2.5">
@@ -32,15 +32,17 @@
           </div>
         </div>
       </div>
-      <div class="col-span-1 text-right">
+      <div class="col-span-2 md:col-span-1 md:text-right">
         <div class="text-[0.9em] text-zinc-500 font-600">
           Mulai dari
         </div>
-        <div class="text-[1.5rem] text-orange-500 font-bold">
-          Rp 1.200.000
-        </div>
-        <div class="text-[0.8em]">
-          /kamar/malam
+        <div class="flex items-center gap-2">
+          <div class="text-[1.3rem] text-orange-500 font-bold tracking-wide md:text-[1.5rem]">
+            Rp 1.200.000
+          </div>
+          <div class="text-[0.9em] md:text-[0.8em]">
+            /malam
+          </div>
         </div>
       </div>
     </div>

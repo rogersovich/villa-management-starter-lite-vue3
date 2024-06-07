@@ -58,14 +58,14 @@ function routeToCatalogs() {
 </script>
 
 <template>
-  <div font-ptSans p="y-8">
+  <div font-ptSans p="y-8" class="mx-4">
     <div class="fcb" m="b-4">
       <div class="title-text">
         {{ title }}
       </div>
       <div v-if="isHome">
         <button class="btn btn-more-rounded" font-lato @click="routeToCatalogs">
-          Lebih banyak
+          Lebih <span v-if="isMdScreen">banyak</span>
           <span i-tabler-arrow-narrow-right inline-block text-xl />
         </button>
       </div>

@@ -105,11 +105,11 @@ onUnmounted(() => {
         </div>
       </div>
       <ProductDetailGallery @modal-toggle="toggleModal" />
-      <div class="sticky top-[0px] z-10 bg-white">
-        <div class="fcs gap-6 border-b-1 border-zinc-200">
+      <div class="sticky top-[0px] z-10 mx-4 bg-white md:mx-0">
+        <div class="fcs gap-6 overflow-x-auto border-b-1 border-zinc-200">
           <template v-for="tab in optionsNavTabs" :key="tab.title">
             <div
-              class="cursor-pointer py-3 font-bold tracking-wide"
+              class="cursor-pointer py-3 text-sm font-bold tracking-wide md:text-base"
               :class="tab.active ? 'border-b-3 border-orange-400 text-orange-400' : 'text-zinc-500'" @click="onSelectNavTab(tab.title)"
             >
               {{ tab.title }}

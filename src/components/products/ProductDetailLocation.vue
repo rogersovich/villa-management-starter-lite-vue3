@@ -192,7 +192,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="border-b-1 border-zinc-200 py-[2.5em]">
+  <div class="mx-4 border-b-1 border-zinc-200 py-[2.5em] md:mx-0">
     <div class="mb-6 fcb">
       <div class="text-[1.5rem] font-bold">
         Lokasi
@@ -209,10 +209,10 @@ onMounted(() => {
       </div>
     </div>
     <div class="grid grid-12 gap-6">
-      <div class="col-span-7">
-        <iframe :src="addressLocation" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+      <div class="col-span-12 md:col-span-7">
+        <iframe :src="addressLocation" width="100%" :height="isMdScreen ? 450 : 250" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
       </div>
-      <div class="col-span-5">
+      <div class="col-span-12 md:col-span-5">
         <div class="mb-4 text-zinc-400">
           Lovina, Tukadmungga, Kec. Buleleng, Kabupaten Buleleng, Bali
         </div>
@@ -223,7 +223,7 @@ onMounted(() => {
           <Carousel ref="carouselRefs" v-model="carrouselCurrentSlide" snap-align="start" :items-to-show="carouselTotalShow" :wrap-around="false" :mouse-drag="false">
             <Slide v-for="(item, index) in nearest_destionation" :key="index">
               <div :class="carouselClasses" class="w-full">
-                <div class="cursor-pointer border border-1 rounded-full px-4 py-1 text-[0.8em]" :class="tagNearestLocation === item.title ? 'border-orange-400 bg-orange-50 text-orange-400' : 'border-zinc-200 '" @click="onSelectTag(item.title)">
+                <div class="cursor-pointer border border-1 rounded-full py-1 text-[0.8em] md:px-4" :class="tagNearestLocation === item.title ? 'border-orange-400 bg-orange-50 text-orange-400' : 'border-zinc-200 '" @click="onSelectTag(item.title)">
                   {{ item.title }}
                 </div>
               </div>

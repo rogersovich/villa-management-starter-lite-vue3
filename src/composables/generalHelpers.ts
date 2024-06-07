@@ -8,7 +8,7 @@ export function formatSlugToString(slug: string): string {
 
 export const OPTION_NAV_TABS = [
   {
-    title: 'Info Umum',
+    title: 'Umum',
     active: true,
     ref: 'el-information',
   },

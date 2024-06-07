@@ -3,10 +3,10 @@ const joinUsIcon = getImageAssets('join-us-icon.webp')
 </script>
 
 <template>
-  <div class="fcb border-b-1 border-zinc-200 py-[2.5em]">
+  <div class="mx-4 border-b-1 border-zinc-200 py-[2.5em] md:mx-0" :class="isMdScreen ? 'fcb' : ''">
     <div class="fcs gap-4">
       <div>
-        <img :src="joinUsIcon" alt="" width="50px" height="50px">
+        <img :src="joinUsIcon" alt="" :width="isMdScreen ? '50px' : '80px'" :height="isMdScreen ? '50px' : '80px'">
       </div>
       <div>
         <div class="text-[1em] font-bold">
@@ -17,8 +17,8 @@ const joinUsIcon = getImageAssets('join-us-icon.webp')
         </div>
       </div>
     </div>
-    <div>
-      <button type="button" class="btn-variant">
+    <div :class="isMdScreen ? '' : 'mt-4'">
+      <button type="button" class="btn-variant" :class="isMdScreen ? '' : 'w-full py-2.5'">
         Gabung Sekarang
       </button>
     </div>

@@ -43,10 +43,14 @@ const nextSlide = () => {
 const prevSlide = () => {
   carouselRefs.value.prev()
 }
+
+onMounted(() => {
+  carouselItemToShow.value = isMdScreen.value ? 3 : 1.2
+})
 </script>
 
 <template>
-  <div class="border-b-1 border-zinc-200 py-[2.5em]">
+  <div class="mx-4 border-b-1 border-zinc-200 py-[2.5em] md:mx-0">
     <div class="mb-6 fcb">
       <div class="text-[1.5rem] font-bold">
         Review

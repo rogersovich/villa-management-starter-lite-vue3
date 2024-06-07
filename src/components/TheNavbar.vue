@@ -23,25 +23,27 @@ const navlist = ref([
   },
 ])
 
+const logoBrand = getImageAssets('logo-brand.png')
+
 function routeToFeature(to: string) {
   router.push(`${to}`)
 }
 </script>
 
 <template>
-  <header p="y-5 lg:x-8 xl:x-28 2xl:x-72" :class="[staticHeaderClasses, headerClasses]">
+  <header p="md:y-5 y-4 x-4 lg:x-8 xl:x-28 2xl:x-72" :class="[staticHeaderClasses, headerClasses]">
     <div class="grid-12 gap-4">
-      <div class="col-span-2 fcs">
-        Your Logo
+      <div class="col-span-6 fcs md:col-span-2">
+        <img :src="logoBrand" alt="Descriptive text" class="h-[2rem] cursor-pointer object-cover" @click="routeToFeature('/')">
       </div>
-      <div class="col-span-8">
+      <div v-if="isMdScreen" class="col-span-8">
         <div class="fcc gap-6">
           <div v-for="item in navlist" :key="item.name" p="x-2" class="cursor-pointer hover:underline" @click="routeToFeature(item.to)">
             {{ item.name }}
           </div>
         </div>
       </div>
-      <div class="col-span-2 fce">
+      <div class="col-span-6 fce md:col-span-2">
         <button class="px-8 py-2 btn" @click="routeToFeature('/auth/sign-in')">
           Login
         </button>
