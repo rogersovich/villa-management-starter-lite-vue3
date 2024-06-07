@@ -57,7 +57,7 @@ const handleLogin = () => {
                     Email
                   </label>
                 </div>
-                <input id="inline-full-name" class="input-form" type="text" placeholder="Masukan Email">
+                <input id="inline-email" class="input-form" type="text" placeholder="Masukan Email">
               </div>
               <div>
                 <div class="pb-2">
@@ -65,7 +65,7 @@ const handleLogin = () => {
                     Password
                   </label>
                 </div>
-                <input id="inline-full-name" type="password" class="input-form" placeholder="Masukan Password">
+                <input id="inline-password" type="password" class="input-form" placeholder="Masukan Password">
               </div>
               <div class="mt-3 text-center">
                 <button type="button" class="py-1 btn-text">

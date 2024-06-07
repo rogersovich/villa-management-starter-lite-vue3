@@ -34,21 +34,21 @@ const services = ref([
 </script>
 
 <template>
-  <div font-sans p="y-8">
-    <div class="text-orange-400 font-bold">
+  <div p="y-8">
+    <div class="text-orange-400 font-bold" font-lato>
       Find Our Services:
     </div>
     <div class="grid grid-2">
-      <div class="text-[3.5em] font-black leading-tight">
+      <div class="text-[3.5em] font-black leading-tight" font-ptSans>
         Bring Passion and
         <br>
         Expertise Together
       </div>
-      <div class="fce">
+      <div font-lato class="fce">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       </div>
     </div>
-    <div class="grid grid-12 mt-10 gap-8">
+    <div font-lato class="grid grid-12 mt-10 gap-8">
       <template v-for="service in services" :key="service.name">
         <div class="col-span-4">
           <div class="min-h-[18em] fcc-v rounded-2xl border-solid bg-white px-2 py-6 outline-1 outline-zinc-200 outline hover:outline-3 hover:outline-orange-400">

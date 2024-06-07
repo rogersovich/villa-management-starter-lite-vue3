@@ -20,6 +20,7 @@ app.use(pinia)
 app.use(Vue3Toasity, {
   autoClose: 2000,
   pauseOnHover: false,
+  pauseOnFocusLoss: false,
   theme: 'colored',
 } as ToastContainerOptions)
 app.mount('#app')

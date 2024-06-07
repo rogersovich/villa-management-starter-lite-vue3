@@ -19,7 +19,7 @@ watch(showToast, (newVal, _oldVal) => {
   if (newVal) {
     setTimeout(() => {
       getNotif()
-    }, 50)
+    }, 10)
   }
 })
 
@@ -27,7 +27,7 @@ toggleDark(false)
 </script>
 
 <template>
-  <main font-inter text="gray-700 dark:gray-200" bg="white">
+  <main font-lato text="gray-700 dark:gray-200" bg="white">
     <RouterView />
   </main>
 </template>
