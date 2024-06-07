@@ -8,7 +8,7 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-orange-600 text-white cursor-pointer hover:bg-orange-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn', 'px-4 py-1.5 rounded inline-block bg-orange-500 text-white cursor-pointer hover:bg-orange-600 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50 text-sm md:text-base tracking-wide'],
     ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-orange-600 !outline-none'],
     ['btn-more-rounded', 'fcc gap-2 border-1 border-orange-500 border-rd-full border-solid bg-white px-6 py-2.5 text-base text-orange-500 hover:bg-orange-500 hover:text-white'],
     ['fcc', 'flex items-center justify-center'],
@@ -33,6 +33,8 @@ export default defineConfig({
     ['btn-back', 'fcs cursor-pointer gap-3 rounded-sm px-3 py-1 hover:outline-1 hover:outline-gray-300 hover:outline'],
     ['btn-variant', 'inline-flex justify-center border border-transparent rounded-md bg-orange-100 px-4 py-2 text-sm text-orange-800 font-medium hover:bg-orange-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
     ['btn-text', 'inline-flex justify-center border border-transparent rounded-md px-4 py-2 text-sm text-orange-500 font-medium hover:bg-orange-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-orange-500'],
+    ['text-label', 'text-sm md:text-base'],
+    ['input-form', 'w-full text-sm md:text-base appearance-none border-2 border-zinc-200 rounded-md bg-zinc-50 px-4 py-2 text-zinc-700 leading-tight focus:border-orange-400 focus:bg-white focus:outline-none'],
   ],
   presets: [
     presetUno(),

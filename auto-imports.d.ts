@@ -50,12 +50,21 @@ declare global {
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
   const injectLocal: typeof import('@vueuse/core')['injectLocal']
+  const is2Screen: typeof import('./src/composables/generalHelpers')['is2Screen']
+  const is2XlScreen: typeof import('./src/composables/generalHelpers')['is2XlScreen']
   const isDark: typeof import('./src/composables/dark')['isDark']
   const isDefined: typeof import('@vueuse/core')['isDefined']
+  const isLargeScreen: typeof import('./src/composables/generalHelpers')['isLargeScreen']
+  const isLgScreen: typeof import('./src/composables/generalHelpers')['isLgScreen']
+  const isMdScreen: typeof import('./src/composables/generalHelpers')['isMdScreen']
   const isProxy: typeof import('vue')['isProxy']
   const isReactive: typeof import('vue')['isReactive']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
+  const isSScreen: typeof import('./src/composables/generalHelpers')['isSScreen']
+  const isSmScreen: typeof import('./src/composables/generalHelpers')['isSmScreen']
+  const isXScreen: typeof import('./src/composables/generalHelpers')['isXScreen']
+  const isXlScreen: typeof import('./src/composables/generalHelpers')['isXlScreen']
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
@@ -353,12 +362,17 @@ declare module 'vue' {
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly injectLocal: UnwrapRef<typeof import('@vueuse/core')['injectLocal']>
+    readonly is2XlScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['is2XlScreen']>
     readonly isDark: UnwrapRef<typeof import('./src/composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
+    readonly isLgScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isLgScreen']>
+    readonly isMdScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isMdScreen']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
+    readonly isSmScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isSmScreen']>
+    readonly isXlScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isXlScreen']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
@@ -647,12 +661,17 @@ declare module '@vue/runtime-core' {
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly injectLocal: UnwrapRef<typeof import('@vueuse/core')['injectLocal']>
+    readonly is2XlScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['is2XlScreen']>
     readonly isDark: UnwrapRef<typeof import('./src/composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
+    readonly isLgScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isLgScreen']>
+    readonly isMdScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isMdScreen']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
+    readonly isSmScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isSmScreen']>
+    readonly isXlScreen: UnwrapRef<typeof import('./src/composables/generalHelpers')['isXlScreen']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>

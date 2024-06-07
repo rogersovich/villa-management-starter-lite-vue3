@@ -56,3 +56,9 @@ export const extractCatalogId = (url: string) => {
   const match = url.match(pattern)
   return match ? match[1] : null
 }
+
+export const isSmScreen = useMediaQuery('(min-width: 640px)')
+export const isMdScreen = useMediaQuery('(min-width: 768px)')
+export const isLgScreen = useMediaQuery('(min-width: 1024px)')
+export const isXlScreen = useMediaQuery('(min-width: 1280px)')
+export const is2XlScreen = useMediaQuery('(min-width: 1536px)')

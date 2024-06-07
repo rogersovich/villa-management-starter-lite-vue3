@@ -105,7 +105,7 @@ onUnmounted(() => {
         </div>
       </div>
       <ProductDetailGallery @modal-toggle="toggleModal" />
-      <div class="sticky top-[0px] z-30 bg-white">
+      <div class="sticky top-[0px] z-10 bg-white">
         <div class="fcs gap-6 border-b-1 border-zinc-200">
           <template v-for="tab in optionsNavTabs" :key="tab.title">
             <div

@@ -42,7 +42,7 @@ function routeToFeature(to: string) {
         </div>
       </div>
       <div class="col-span-2 fce">
-        <button class="border-rd-md bg-orange-500 px-8 py-1.5 btn hover:bg-orange-600">
+        <button class="px-8 py-2 btn" @click="routeToFeature('/auth/sign-in')">
           Login
         </button>
       </div>
