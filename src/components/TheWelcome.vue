@@ -20,12 +20,12 @@ const imagePath = getImageUrl('house1', 'png')
         </div>
       </div>
       <div class="col-span-1 fcc">
-        <img :src="imagePath" alt="Descriptive text" class="h-[25em] object-cover 2xl:h-[35em] xl:h-[30em]">
+        <img v-lazy="imagePath" alt="Descriptive text" class="h-[25em] object-cover 2xl:h-[35em] xl:h-[30em]" loading="lazy">
       </div>
     </template>
     <template v-else>
       <div class="col-span-2 fcc">
-        <img :src="imagePath" alt="Descriptive text" class="h-[16em] object-cover">
+        <img v-lazy="imagePath" class="h-[16em] object-cover" loading="lazy">
       </div>
       <div class="col-span-2 px-8 pb-6">
         <div class="text-left text-[1.6em] font-black">

@@ -9,9 +9,9 @@ defineOptions({
     <WhatsappFloating />
 
     <TheWelcome />
+    <HomeServices />
 
     <HomeProducts />
 
-    <HomeServices />
   </DefaultLayout>
 </template>

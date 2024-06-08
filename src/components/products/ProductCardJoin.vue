@@ -6,7 +6,7 @@ const joinUsIcon = getImageAssets('join-us-icon.webp')
   <div class="mx-4 border-b-1 border-zinc-200 py-[2.5em] md:mx-0" :class="isMdScreen ? 'fcb' : ''">
     <div class="fcs gap-4">
       <div>
-        <img :src="joinUsIcon" alt="" :width="isMdScreen ? '50px' : '80px'" :height="isMdScreen ? '50px' : '80px'">
+        <img v-lazy="joinUsIcon" alt="" :width="isMdScreen ? '50px' : '80px'" :height="isMdScreen ? '50px' : '80px'" loading="lazy">
       </div>
       <div>
         <div class="text-[1em] font-bold">

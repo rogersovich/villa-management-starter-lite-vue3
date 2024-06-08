@@ -20,7 +20,7 @@ const handleLogin = () => {
     <div class="grid grid-12 min-h-vh">
       <div v-if="isMdScreen" class="col-span-5 bg-orange-400">
         <div class="min-h-vh fcc-v py-5">
-          <img :src="illustration1" alt="" srcset="" width="100%" height="auto">
+          <img v-lazy="illustration1" loading="lazy" alt="" srcset="" width="100%" height="auto">
           <div class="px-8 text-center">
             <div class="mb-1.5 text-2xl text-white font-bold">
               Temukan Villa Idaman Anda
@@ -33,13 +33,13 @@ const handleLogin = () => {
       </div>
       <div class="col-span-12 min-h-vh flex flex-col items-center justify-between md:col-span-7">
         <div class="pt-8">
-          <img v-if="isMdScreen" :src="logo" alt="" srcset="" :width="isMdScreen ? '180px' : '150px'" :height="isMdScreen ? '180px' : '150px'">
+          <img v-if="isMdScreen" v-lazy="logo" loading="lazy" alt="" srcset="" :width="isMdScreen ? '180px' : '150px'" :height="isMdScreen ? '180px' : '150px'">
         </div>
         <div class="px-4 md:min-w-[30em] md:px-0">
           <div class="pb-5 text-center">
             <template v-if="!isMdScreen">
               <div class="mb-3 fcc">
-                <img :src="logo" alt="" srcset="" :width="isMdScreen ? '180px' : '160px'" :height="isMdScreen ? '180px' : '160px'">
+                <img v-lazy="logo" loading="lazy" alt="" srcset="" :width="isMdScreen ? '180px' : '160px'" :height="isMdScreen ? '180px' : '160px'">
               </div>
             </template>
             <div class="text-2xl font-bold md:text-4xl">

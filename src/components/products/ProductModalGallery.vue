@@ -43,10 +43,12 @@ const carouselItemToShow = ref(1)
         </div>
       </DialogTitle>
       <div class="mt-4">
-        <Carousel ref="carouselRefs" v-model="carouselIndex" :items-to-show="carouselItemToShow" :wrap-around="true">
+        <Carousel ref="carouselRefs" v-model="carouselIndex" :items-to-show="carouselItemToShow" :wrap-around="true" snap-align="center">
           <Slide v-for="(item, index) in props.galleries" :key="index">
             <div class="carousel__item cursor-pointer">
-              <img :src="item.image" alt="" srcset="" height="150px" width="100%" class="rounded-md">
+              <lazy-component>
+                <img :src="item.image" alt="" srcset="" height="150px" width="100%" loading="lazy" class="rounded-md">
+              </lazy-component>
             </div>
           </Slide>
           <template #addons>

@@ -20,7 +20,7 @@ function routeToFeature(to: string) {
   <header p="md:y-5 y-4 x-4 lg:x-8 xl:x-28 2xl:x-72" :class="[staticHeaderClasses, headerClasses]">
     <div class="grid-12 gap-4">
       <div class="col-span-6 fcs md:col-span-2">
-        <img :src="logoBrand" alt="Descriptive text" class="h-[2rem] cursor-pointer object-cover" @click="routeToFeature('/')">
+        <img loading="lazy" v-lazy="logoBrand" alt="Descriptive text" class="h-[2rem] cursor-pointer object-cover" @click="routeToFeature('/')">
       </div>
       <div v-if="isMdScreen" class="col-span-8">
         <div class="fcc gap-6">
