@@ -84,7 +84,7 @@ onUnmounted(() => {
 
   <DefaultLayout>
     <div>
-      <div class="mx-4 fcb md:mx-0">
+      <div font-sans class="mx-4 fcb md:mx-0">
         <div class="px-0 py-0 btn-back md:px-3 md:py-1" @click="routeBack">
           <div i-tabler-arrow-left class="text-lg" />
           <div>
@@ -93,38 +93,38 @@ onUnmounted(() => {
         </div>
       </div>
       <ProductDetailGallery @modal-toggle="emitToggleModal" />
-      <div class="sticky top-[0px] z-10 mx-4 bg-white md:mx-0">
+      <div class="sticky top-[0px] z-10 mx-4 bg-white md:mx-0" font-sans>
         <div class="fcs gap-4 overflow-x-auto border-b-1 border-zinc-200 md:gap-6">
           <template v-for="tab in optionsNavTabs" :key="tab.title">
             <div
               class="cursor-pointer py-3 text-sm font-bold tracking-wide md:text-base"
               :class="tab.active ? 'border-b-3 border-orange-400 text-orange-400' : 'text-zinc-500'" @click="onSelectNavTab(tab.title)"
             >
-              <div :class="{ 'w-[6.5rem]': !isMdScreen && tab.title === 'Infomasi Umum' }">
+              <div :class="{ 'w-[7rem]': !isMdScreen && tab.title === 'Infomasi Umum' }">
                 {{ tab.title }}
               </div>
             </div>
           </template>
         </div>
       </div>
-      <section id="el-information">
+      <section id="el-information" font-sans>
         <ProductDetailGeneralInfo />
         <ProductCardJoin />
       </section>
-      <section id="el-review">
+      <section id="el-review" font-sans>
         <ProductDetailReview />
       </section>
-      <section id="el-facility">
+      <section id="el-facility" font-sans>
         <ProductDetailFacility />
       </section>
-      <section id="el-location">
+      <section id="el-location" font-sans>
         <ProductDetailLocation />
       </section>
-      <section id="el-about">
+      <section id="el-about" font-sans>
         <ProductDetailDescription />
         <ProductDetailFaq />
       </section>
-      <section id="el-calendars">
+      <section id="el-calendars" font-sans>
         <ProductDetailCalendar />
       </section>
     </div>
