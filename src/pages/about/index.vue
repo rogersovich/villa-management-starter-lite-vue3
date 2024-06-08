@@ -1,14 +1,13 @@
 <script setup lang="ts">
 defineOptions({
-  name: 'CatalogPage',
+  name: 'AboutPage',
 })
 </script>
 
 <template>
   <DefaultLayout>
     <div>
-      <HomeProducts :is-home="false" title="Catalogs Recommendations" />
-      <HomeProducts :is-home="false" title="Product Catalogs" />
+      Halaman About
     </div>
   </DefaultLayout>
 </template>

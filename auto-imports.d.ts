@@ -6,7 +6,9 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
+  const OPTION_HOME_TABS: typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']
   const OPTION_NAV: typeof import('./src/composables/generalHelpers')['OPTION_NAV']
+  const OPTION_NAV_TAB: typeof import('./src/composables/generalHelpers')['OPTION_NAV_TAB']
   const OPTION_NAV_TABS: typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
@@ -325,6 +327,7 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_HOME_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']>
     readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
@@ -625,6 +628,7 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_HOME_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']>
     readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>

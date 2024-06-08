@@ -1,6 +1,6 @@
 <template>
   <div class="block w-full">
-    <div class="grid grid-12 mt-8 gap-y-8 bg-zinc-800 px-4 py-6 md:gap-16 2xl:px-72 lg:px-8 md:py-8 xl:px-28">
+    <div class="grid grid-12 mt-8 gap-y-8 bg-zinc-800 px-4 pb-18 pt-6 md:gap-16 2xl:px-72 lg:px-8 md:py-8 xl:px-28">
       <div class="col-span-12 md:col-span-5">
         <div class="text-zinc-100">
           <div class="fcs gap-3">
@@ -58,23 +58,48 @@
                 Contact Us
               </div>
               <ul class="mt-2 text-sm">
-                <li class="mb-1">
-                  0896212818192
-                </li>
-                <li class="mb-1">
-                  support@gmail.com
-                </li>
-                <li class="mt-3 fcs gap-4">
-                  <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
-                    <div i-tabler-brand-facebook class="text-[1rem]" />
-                  </div>
-                  <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
-                    <div i-tabler-brand-instagram class="text-[1rem]" />
-                  </div>
-                  <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
-                    <div i-tabler-brand-twitter class="text-[1rem]" />
-                  </div>
-                </li>
+                <template v-if="isMdScreen">
+                  <li class="mb-1">
+                    0896212818192
+                  </li>
+                  <li class="mb-1">
+                    support@gmail.com
+                  </li>
+                  <li class="mt-3 fcs gap-4">
+                    <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                      <div i-tabler-brand-facebook class="text-[1rem]" />
+                    </div>
+                    <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                      <div i-tabler-brand-instagram class="text-[1rem]" />
+                    </div>
+                    <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                      <div i-tabler-brand-twitter class="text-[1rem]" />
+                    </div>
+                  </li>
+                </template>
+                <template v-if="!isMdScreen">
+                  <li class="fc gap-12">
+                    <div>
+                      <div class="mb-1">
+                        0896212818192
+                      </div>
+                      <div>
+                        support@gmail.com
+                      </div>
+                    </div>
+                    <div class="mt-3 fcs gap-4">
+                      <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                        <div i-tabler-brand-facebook class="text-[1rem]" />
+                      </div>
+                      <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                        <div i-tabler-brand-instagram class="text-[1rem]" />
+                      </div>
+                      <div class="fcc border border-gray-100 border-rd-full border-solid p-1.5">
+                        <div i-tabler-brand-twitter class="text-[1rem]" />
+                      </div>
+                    </div>
+                  </li>
+                </template>
               </ul>
             </div>
           </div>

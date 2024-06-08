@@ -62,3 +62,21 @@ export const isMdScreen = useMediaQuery('(min-width: 768px)')
 export const isLgScreen = useMediaQuery('(min-width: 1024px)')
 export const isXlScreen = useMediaQuery('(min-width: 1280px)')
 export const is2XlScreen = useMediaQuery('(min-width: 1536px)')
+
+export const OPTION_HOME_TABS = [
+  {
+    name: 'Home',
+    icon: 'i-tabler-home',
+    to: '/',
+  },
+  {
+    name: 'Catalog',
+    icon: 'i-tabler-building-circus',
+    to: '/catalogs',
+  },
+  {
+    name: 'About',
+    icon: 'i-tabler-user',
+    to: '/about',
+  },
+]

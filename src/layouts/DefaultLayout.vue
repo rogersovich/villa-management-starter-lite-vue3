@@ -2,23 +2,7 @@
 const router = useRouter()
 const route = useRoute()
 
-const navlist = ref([
-  {
-    name: 'Home',
-    icon: 'i-tabler-home',
-    to: '/',
-  },
-  {
-    name: 'Catalog',
-    icon: 'i-tabler-building-circus',
-    to: '/catalogs',
-  },
-  {
-    name: 'About',
-    icon: 'i-tabler-user',
-    to: '/about',
-  },
-])
+const navlist = ref(OPTION_HOME_TABS)
 
 function routeToFeature(to: string) {
   router.push(`${to}`)
@@ -35,10 +19,10 @@ function routeToFeature(to: string) {
   <TheFooter />
 
   <template v-if="!isMdScreen">
-    <div class="sticky bottom-0 left-0 z-100 h-[4rem] w-full p-2">
-      <div class="h-full w-full fcc gap-6 rounded-md bg-orange-400 bg-op-80 p-1 backdrop-blur">
+    <div class="fixed bottom-0 left-0 z-100 h-[4rem] w-full px-3 py-2">
+      <div class="h-full w-full fcc gap-6 rounded-md bg-orange-400 p-1">
         <div v-for="(item, index) in navlist" :key="index">
-          <div class="fc cursor-pointer gap-2 text-[0.9rem]" @click="routeToFeature(item.to)">
+          <div class="fc cursor-pointer gap-2 text-[1rem]" @click="routeToFeature(item.to)">
             <span :class="[item.icon, { 'text-white': route.path === item.to, 'text-zinc-600': route.path !== item.to }]" class="inline-block text-sm" />
             <span :class="{ 'text-white': route.path === item.to, 'text-zinc-600': route.path !== item.to }"> {{ item.name }}</span>
           </div>
