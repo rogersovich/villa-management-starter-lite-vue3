@@ -8,9 +8,14 @@ function sendMessageToWhatsApp() {
 </script>
 
 <template>
-  <div class="fixed bottom-2 right-2 z-10">
+  <div
+    class="fixed right-2 z-10" :class="{
+      'bottom-2': isMdScreen,
+      'bottom-18': !isMdScreen,
+    }"
+  >
     <div class="cursor-pointer rounded-full bg-[#25D366] p-3" @click="sendMessageToWhatsApp">
-      <div i-tabler-brand-whatsapp class="text-4xl text-white" />
+      <div i-tabler-brand-whatsapp class="text-2xl text-white md:text-4xl" />
     </div>
   </div>
 </template>

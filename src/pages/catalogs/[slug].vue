@@ -96,8 +96,8 @@ onUnmounted(() => {
   </BaseModal>
   <DefaultLayout>
     <div>
-      <div class="fcb">
-        <div class="btn-back" @click="routeBack">
+      <div class="mx-4 fcb md:mx-0">
+        <div class="px-0 py-0 btn-back md:px-3 md:py-1" @click="routeBack">
           <div i-tabler-arrow-left class="text-lg" />
           <div>
             Back
@@ -106,13 +106,15 @@ onUnmounted(() => {
       </div>
       <ProductDetailGallery @modal-toggle="toggleModal" />
       <div class="sticky top-[0px] z-10 mx-4 bg-white md:mx-0">
-        <div class="fcs gap-6 overflow-x-auto border-b-1 border-zinc-200">
+        <div class="fcs gap-4 overflow-x-auto border-b-1 border-zinc-200 md:gap-6">
           <template v-for="tab in optionsNavTabs" :key="tab.title">
             <div
               class="cursor-pointer py-3 text-sm font-bold tracking-wide md:text-base"
               :class="tab.active ? 'border-b-3 border-orange-400 text-orange-400' : 'text-zinc-500'" @click="onSelectNavTab(tab.title)"
             >
-              {{ tab.title }}
+              <div :class="{ 'w-[6.5rem]': !isMdScreen && tab.title === 'Infomasi Umum' }">
+                {{ tab.title }}
+              </div>
             </div>
           </template>
         </div>

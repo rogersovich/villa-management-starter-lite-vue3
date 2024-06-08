@@ -32,9 +32,9 @@ function routeToDetail() {
 </script>
 
 <template>
-  <div font-lato class="col-span-12 cursor-pointer rounded-3xl bg-white p-2 outline-1 outline-zinc-200 outline md:col-span-6 xl:col-span-3 hover:outline-3 hover:outline-orange-400" @click="routeToDetail">
+  <div font-lato class="col-span-12 cursor-pointer rounded-3xl bg-white p-2 outline-1 outline-zinc-200 outline 2xl:col-span-3 lg:col-span-4 md:col-span-6 xl:col-span-3 hover:outline-3 hover:outline-orange-400" @click="routeToDetail">
     <div class="relative">
-      <img :src="product.image" alt="Descriptive text" class="h-[16em] w-full border-rd-2xl object-fill">
+      <img :src="product.image" alt="Descriptive text" class="w-full border-rd-2xl object-fill 2xl:h-[14em] xl:h-[12em]">
       <div class="absolute right-2 top-2">
         <div class="chip-rating">
           <span i-tabler-star-filled class="inline-block text-[0.75rem]" />
