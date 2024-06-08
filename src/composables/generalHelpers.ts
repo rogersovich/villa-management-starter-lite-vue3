@@ -80,3 +80,21 @@ export const OPTION_HOME_TABS = [
     to: '/about',
   },
 ]
+
+export const OPTION_GALLERIES = [
+  {
+    image: getImageAssets('villa-1.jpg'),
+  },
+  {
+    image: getImageAssets('villa-2.jpg'),
+  },
+  {
+    image: getImageAssets('villa-3.jpg'),
+  },
+  {
+    image: getImageAssets('villa-1.jpg'),
+  },
+  {
+    image: getImageAssets('villa-2.jpg'),
+  },
+]

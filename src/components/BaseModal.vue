@@ -8,6 +8,10 @@ import {
 
 defineProps({
   isOpen: Boolean,
+  containerWidth: {
+    type: String,
+    default: 'max-w-md',
+  },
 })
 
 const emit = defineEmits(['update:isOpen'])
@@ -43,7 +47,7 @@ function closeModal() {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel class="max-w-md w-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+            <DialogPanel :class="[containerWidth]" class="w-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
               <slot />
             </DialogPanel>
           </TransitionChild>

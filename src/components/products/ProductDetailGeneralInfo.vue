@@ -36,7 +36,7 @@
         <div class="text-[0.9em] text-zinc-500 font-600">
           Mulai dari
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 md:justify-end">
           <div class="text-[1.3rem] text-orange-500 font-bold tracking-wide md:text-[1.5rem]">
             Rp 1.200.000
           </div>

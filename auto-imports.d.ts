@@ -6,6 +6,8 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
+  const OPTION: typeof import('./src/composables/generalHelpers')['OPTION']
+  const OPTION_GALLERIES: typeof import('./src/composables/generalHelpers')['OPTION_GALLERIES']
   const OPTION_HOME_TABS: typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']
   const OPTION_NAV: typeof import('./src/composables/generalHelpers')['OPTION_NAV']
   const OPTION_NAV_TAB: typeof import('./src/composables/generalHelpers')['OPTION_NAV_TAB']
@@ -327,6 +329,7 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_GALLERIES: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_GALLERIES']>
     readonly OPTION_HOME_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']>
     readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -628,6 +631,7 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly OPTION_GALLERIES: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_GALLERIES']>
     readonly OPTION_HOME_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_HOME_TABS']>
     readonly OPTION_NAV_TABS: UnwrapRef<typeof import('./src/composables/generalHelpers')['OPTION_NAV_TABS']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>

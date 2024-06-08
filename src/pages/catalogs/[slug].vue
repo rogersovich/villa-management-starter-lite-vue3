@@ -19,6 +19,13 @@ function toggleModal(value: boolean) {
   isOpen.value = value
 }
 
+const carouselIndex = ref(0)
+
+const emitToggleModal = (payload: { value: boolean, index: number }) => {
+  isOpen.value = payload.value
+  carouselIndex.value = payload.index
+}
+
 const optionsNavTabs = ref(OPTION_NAV_TABS)
 
 const onSelectNavTab = (title: string) => {
@@ -73,27 +80,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <BaseModal :is-open="isOpen" @update:is-open="isOpen = $event">
-    <template #default>
-      <DialogTitle as="h3" class="text-lg text-gray-900 font-medium leading-6">
-        Payment successful
-      </DialogTitle>
-      <div class="mt-2">
-        <p class="text-sm text-gray-500">
-          Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
-        </p>
-      </div>
-      <div class="mt-4">
-        <button
-          type="button"
-          class="btn-variant"
-          @click="toggleModal(false)"
-        >
-          Got it, thanks!
-        </button>
-      </div>
-    </template>
-  </BaseModal>
+  <ProductModalGallery :is-open="isOpen" :carousel-index="carouselIndex" :galleries="OPTION_GALLERIES" @update:is-open="toggleModal(false)" />
+
   <DefaultLayout>
     <div>
       <div class="mx-4 fcb md:mx-0">
@@ -104,7 +92,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-      <ProductDetailGallery @modal-toggle="toggleModal" />
+      <ProductDetailGallery @modal-toggle="emitToggleModal" />
       <div class="sticky top-[0px] z-10 mx-4 bg-white md:mx-0">
         <div class="fcs gap-4 overflow-x-auto border-b-1 border-zinc-200 md:gap-6">
           <template v-for="tab in optionsNavTabs" :key="tab.title">

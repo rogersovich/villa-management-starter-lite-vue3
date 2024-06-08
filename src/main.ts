@@ -8,6 +8,7 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 import 'vue3-toastify/dist/index.css'
+import 'vue3-carousel/dist/carousel.css'
 
 const pinia = createPinia()
 const app = createApp(App)

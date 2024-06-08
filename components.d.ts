@@ -24,6 +24,7 @@ declare module 'vue' {
     ProductDetailLocation: typeof import('./src/components/products/ProductDetailLocation.vue')['default']
     ProductDetailReview: typeof import('./src/components/products/ProductDetailReview.vue')['default']
     ProductFacilities: typeof import('./src/components/products/ProductFacilities.vue')['default']
+    ProductModalGallery: typeof import('./src/components/products/ProductModalGallery.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TagRatings: typeof import('./src/components/TagRatings.vue')['default']
